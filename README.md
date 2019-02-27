@@ -51,37 +51,24 @@ Para executar o build do front-end separadamente e subir o servidor node em prim
 
 # Estrutura de arquivos
 server/
-
+```
+server/
 ├── books/
-
 │   ├── data.js
-
 │   ├── mutation.js
-
 │   ├── query.js
-
 │   └── type.js
-
 ├── pessoas/
-
 │   ├── data.js
-
 │   ├── mutation.js
-
 │   ├── query.js
-
 │   └── type.js
-
 ├── resolvers.js
-
 └── schema.graphql
-
 react-ui/
-
 ├── build/
-
 ├── src/
-
+```
 
 # Observações
 Há algumas observações que precisam ser revisadas conforme o seu caso, verifique o arquivo `server/index.js`.
