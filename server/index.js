@@ -24,7 +24,7 @@ const dbConnection = PoolConnection()
 
 // Caso esteja em produção o modo de instrospeção e o playground é desativado
 const server =
-  process.env === 'production'
+  process.env.NODE_ENV === 'production'
     ? new ApolloServer({ typeDefs, resolvers, context: { dbConnection, query } })
     : new ApolloServer({ typeDefs, resolvers, context: { dbConnection, query }, introspection: true, playground: true })
 
